@@ -134,7 +134,7 @@ if __name__ == "__main__":
                             tensorboard_log += [(f"{name}_{j+1}", metric)]
                 tensorboard_log += [("loss", loss.item())]
                 logger.list_of_scalars_summary(tensorboard_log, batches_done)
-
+            
             log_str += AsciiTable(metric_table).table
             log_str += f"\nTotal loss {loss.item()}"
 

@@ -8,5 +8,9 @@ output
 data/coco
 backup
 weights/*.weights
+weights/*.74
+.vscode
 __pycache__
 checkpoints
+
+
